@@ -1,0 +1,64 @@
+.modal{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+    display: none;
+    position: fixed;
+    z-index: 99999;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    &.active{
+        display: flex
+    }
+    .content-modal{
+        width: 450px;
+        background-color: #fff;
+        border-radius: 30px;
+        padding: 20px 0px 29px 0px;
+        .icon-modal{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            img{
+                width: 80px;
+                height: auto;
+            }
+        }
+        .title-modal{
+            font-size: 30px;
+            font-weight: 700;
+            text-align: center;
+            text-transform: uppercase
+        }
+        .message-modal{
+            font-size: 18px;
+            text-align: center;
+            margin: 20px 0px;
+            font-weight: 500
+        }
+        .text-receta{
+            text-align: center;
+            padding: 20px;
+            font-size: 20px;
+        }
+    }
+    .btn-section{
+        display: flex;
+        justify-content: center;
+        width: 100%
+    }
+    .content-modal-img{
+        max-width: 990px;
+        background-color: #fff;
+        height: 600px
+    }
+}

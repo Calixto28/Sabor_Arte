@@ -1,0 +1,205 @@
+.btn{
+    padding: 10px 7px 8px 7px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    min-width: 130px;
+    margin: 0px 10px;
+    &:hover{
+        cursor: pointer
+    }
+}
+.btn-action-list{
+    padding: 5px 8px 5px 8px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    margin: 0px 10px;
+    &:hover{
+        cursor: pointer
+    }
+}
+.btn-orange{
+    background-color: $colorOrange;
+    color: $colorWhite;
+    border: 1px solid $colorOrange;
+    &:hover{
+        border: 1px solid rgba($colorOrange, .8);
+        background-color: rgba($colorOrange, .8)
+    }
+}
+.btn-orange-outline-black{
+    background-color: transparent;
+    color: $colorBlack;
+    border: 3px solid $colorOrange;
+    &:hover{
+        border: 3px solid $colorOrange;
+        background-color: $colorOrange;
+        color: $colorWhite
+    }
+}
+.btn-orange-outline-white{
+    background-color: transparent;
+    color: $colorWhite;
+    border: 3px solid $colorOrange;
+    &:hover{
+        border: 3px solid $colorOrange;
+        background-color: $colorOrange;
+        color: $colorWhite
+    }
+}
+.btn-success{
+    background-color: $colorSuccess;
+    color: $colorWhite;
+    border: 1px solid $colorSuccess;
+    &:hover{
+        border: 1px solid rgba($colorSuccess, .8);
+        background-color: rgba($colorSuccess, .8)
+    }
+}
+.btn-success-outline-black{
+    background-color: transparent;
+    color: $colorBlack;
+    border: 3px solid $colorSuccess;
+    &:hover{
+        border: 3px solid $colorSuccess;
+        background-color: $colorSuccess;
+        color: $colorWhite
+    }
+}
+.btn-success-outline-white{
+    background-color: transparent;
+    color: $colorWhite;
+    border: 3px solid $colorSuccess;
+    &:hover{
+        border: 3px solid $colorSuccess;
+        background-color: $colorSuccess;
+        color: $colorWhite
+    }
+}
+.btn-warning{
+    background-color: $colorWarning;
+    color: $colorWhite;
+    border: 1px solid $colorWarning;
+    &:hover{
+        border: 1px solid rgba($colorWarning, .8);
+        background-color: rgba($colorWarning, .8)
+    }
+}
+.btn-warning-outline-black{
+    background-color: transparent;
+    color: $colorBlack;
+    border: 3px solid $colorWarning;
+    &:hover{
+        border: 3px solid $colorWarning;
+        background-color: $colorWarning;
+        color: $colorWhite
+    }
+}
+.btn-warning-outline-white{
+    background-color: transparent;
+    color: $colorWhite;
+    border: 3px solid $colorWarning;
+    &:hover{
+        border: 3px solid $colorWarning;
+        background-color: $colorWarning;
+        color: $colorWhite
+    }
+}
+.btn-secondary{
+    background-color: $colorSecondary;
+    color: $colorWhite;
+    border: 1px solid $colorSecondary;
+    &:hover{
+        border: 1px solid rgba($colorSecondary, .8);
+        background-color: rgba($colorSecondary, .8)
+    }
+}
+.btn-secondary-outline-black{
+    background-color: transparent;
+    color: $colorBlack;
+    border: 3px solid $colorSecondary;
+    &:hover{
+        border: 3px solid $colorSecondary;
+        background-color: $colorSecondary;
+        color: $colorWhite
+    }
+}
+.btn-secondary-outline-white{
+    background-color: transparent;
+    color: $colorWhite;
+    border: 3px solid $colorSecondary;
+    &:hover{
+        border: 3px solid $colorSecondary;
+        background-color: $colorSecondary;
+        color: $colorWhite
+    }
+}
+.btn-danger{
+    background-color: $colorDanger;
+    color: $colorWhite;
+    border: 1px solid $colorDanger;
+    &:hover{
+        border: 1px solid rgba($colorDanger, .8);
+        background-color: rgba($colorDanger, .8)
+    }
+}
+.btn-danger-outline-black{
+    background-color: transparent;
+    color: $colorBlack;
+    border: 3px solid $colorDanger;
+    &:hover{
+        border: 3px solid $colorDanger;
+        background-color: $colorDanger;
+        color: $colorWhite
+    }
+}
+.btn-danger-outline-white{
+    background-color: transparent;
+    color: $colorWhite;
+    border: 3px solid $colorDanger;
+    &:hover{
+        border: 3px solid $colorDanger;
+        background-color: $colorDanger;
+        color: $colorWhite
+    }
+}
+.btn-primary{
+    background-color: $colorPrimary;
+    color: $colorWhite;
+    border: 1px solid $colorPrimary;
+    &:hover{
+        border: 1px solid rgba($colorPrimary, .8);
+        background-color: rgba($colorPrimary, .8)
+    }
+}
+.btn-primary-outline-black{
+    background-color: transparent;
+    color: $colorBlack;
+    border: 3px solid $colorPrimary;
+    &:hover{
+        border: 3px solid $colorPrimary;
+        background-color: $colorPrimary;
+        color: $colorWhite
+    }
+}
+.btn-primary-outline-white{
+    background-color: transparent;
+    color: $colorWhite;
+    border: 3px solid $colorPrimary;
+    &:hover{
+        border: 3px solid $colorPrimary;
+        background-color: $colorPrimary;
+        color: $colorWhite
+    }
+}

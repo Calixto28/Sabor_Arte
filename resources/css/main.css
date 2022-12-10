@@ -1,0 +1,1209 @@
+@charset "UTF-8";
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+:root {
+  /* Font */
+  --font-stack: Helvetica, sans-serif;
+  /* Colors */
+  --primary-color: #000000;
+  --secondary-color: #cd9494;
+  --secondary-color: #fbfcfc;
+  /* Alert messages */
+  /* Background */
+  --bg-info-color: #cce5ff;
+  --bg-danger-color: #f8d7da;
+  --bg-success-color: #d4edda;
+  --bg-warning-color: #fff3cd;
+  --bg-dark-color: #d6d8d9;
+  /* Border */
+  --b-info-color: #b8daff;
+  --b-danger-color: #f5c6cb;
+  --b-success-color: #c3e6cb;
+  --b-warning-color: #ffeeba;
+  --b-dark-color: #c6c8ca;
+  /* Font */
+  --f-info-color: #004085;
+  --f-danger-color: #721c24;
+  --f-success-color: #155724;
+  --f-warning-color: #856404;
+  --f-dark-color: #1b1e21;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+/* Inherit fonts for inputs and buttons */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+*::before,
+*::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 44px;
+  color: var(--primary-color);
+}
+
+h2 {
+  font-size: 38px;
+  color: var(--primary-color);
+}
+
+body {
+  font: 100% var(--font-stack);
+  color: var(--primary-color);
+  background-color: var(--background-color);
+}
+
+.container {
+  max-width: 1024px;
+}
+
+header {
+  background: url("../../../images/logo.png") top right no-repeat;
+  background-blend-mode: multiply;
+  background-size: cover;
+  height: 100vh;
+  background-color: #a5a1a1;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.signupform-body {
+  background: url(https://thumbs.dreamstime.com/b/marco-de-la-comida-fondo-italiano-de-la-comida-concepto-sano-de-la-comida-o-ingredientes-para-cocinar-la-salsa-del-pesto-en-un-74349277.jpg) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.signupform-body .footer {
+  position: relative;
+  text-align: center;
+}
+.signupform-body .signupform-container {
+  margin: 1rem;
+  position: relative;
+  width: 28rem;
+  height: 42rem;
+  background-image: url(https://png.pngtree.com/thumb_back/fw800/back_our/20190620/ourmid/pngtree-restaurant-food-poster-image_174124.jpg);
+  background-size: contain;
+  box-shadow: 0px 1px 3px rgb(114, 110, 110);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border-radius: 10px;
+  padding: 3.7rem 0.5rem;
+}
+.signupform-body .signupform-container .signup-title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 2.5rem;
+  color: whitesmoke;
+  font-family: Tahoma;
+}
+.signupform-body .signupform-container .signupform {
+  position: absolute;
+  width: 90%;
+  padding: 5%;
+}
+.signupform-body .signupform-container .signupform .signupform-group {
+  position: relative;
+}
+.signupform-body .signupform-container .signupform .singupform-check {
+  position: absolute;
+  width: 100%;
+  display: flex;
+}
+.signupform-body .signupform-container .signupform .singupform-button {
+  position: absolute;
+  margin-top: 0rem;
+  width: 100%;
+}
+.signupform-body .signupform-container .signupform input {
+  display: block;
+  width: 100%;
+  background-color: #fef1f1;
+  height: 2.5rem;
+  border-radius: 15px;
+  letter-spacing: 1.5px;
+  padding-bottom: 0.3rem;
+  padding-top: 0.3rem;
+  margin-top: 1rem;
+  padding-left: 0.5rem;
+  font-family: Tahoma;
+}
+.signupform-body .signupform-container .signupform input:hover {
+  box-shadow: 2px 2px 5px gray;
+}
+.signupform-body .signupform-container .signupform input:focus {
+  box-shadow: none;
+}
+.signupform-body .signupform-container .signupform input::-moz-placeholder {
+  font-weight: bold;
+  opacity: 0.6;
+  color: #515151;
+  line-height: 5px;
+  font-size: 0.9rem;
+}
+.signupform-body .signupform-container .signupform input:-ms-input-placeholder {
+  font-weight: bold;
+  opacity: 0.6;
+  color: #515151;
+  line-height: 5px;
+  font-size: 0.9rem;
+}
+.signupform-body .signupform-container .signupform input::placeholder {
+  font-weight: bold;
+  opacity: 0.6;
+  color: #515151;
+  line-height: 5px;
+  font-size: 0.9rem;
+}
+.signupform-body .signupform-container .signupform__name-group {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+.signupform-body .signupform-container .signupform button {
+  font-size: 1.7rem;
+  color: white;
+  font-family: Tahoma;
+  width: 12rem;
+  height: 3rem;
+  margin-top: 1rem;
+  background: #080220;
+  border-radius: 5px;
+}
+.signupform-body .signupform-container .signupform button:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+.signupform-body .signupform-container .signupform svg {
+  display: block;
+  margin-bottom: 2rem;
+  border-radius: 35px;
+  padding-bottom: 0.3rem;
+  padding-top: 0.3rem;
+  margin-left: 10px;
+  background: #f7f0f0;
+}
+.signupform-body .signupform-container .signupform p {
+  margin-top: 8px;
+  font-family: Tahoma;
+  font-size: small;
+  color: whitesmoke;
+  font-size: 0.9rem;
+}
+.signupform-body .signupform-container .signupform a {
+  margin-top: 8px;
+  font-family: Tahoma;
+  font-size: small;
+  color: #dfbe19;
+  font-size: 0.9rem;
+}
+.signupform-body .signupform-container .signupform a:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+.signupform-body .signupform-container .signupform img {
+  display: block;
+  background-image: url('../img/logo.png');
+  background-size: auto;
+  border-radius: 25px;
+  height: 10rem;
+  width: 21rem;
+  margin-bottom: 2.5rem;
+  margin-left: 38px;
+}
+
+#body {
+  position: relative;
+  background: rgb(113, 113, 113);
+  background: linear-gradient(180deg, rgb(113, 113, 113) 0%, rgb(134, 134, 134) 50%, rgb(251, 251, 251) 100%);
+  top: 128px;
+}
+#body .nosotros {
+  width: 100%;
+  height: 280px;
+  padding-left: 100px;
+  display: flex;
+}
+#body .nosotros .imagen {
+  background: url("https://static8.depositphotos.com/1011643/1067/i/600/depositphotos_10674407-stock-photo-professional-cooks.jpg");
+  background-size: contain;
+  width: 20rem;
+  height: 13rem;
+  margin: 20px;
+}
+#body .nosotros .texto {
+  width: 50%;
+  padding-top: 100px;
+  padding-left: 50px;
+  text-align: justify;
+}
+#body .menu {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+#body .menu .botones {
+  display: grid;
+  width: 15%;
+  padding: 3rem;
+}
+#body .menu .botones .boton {
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  background-color: rgb(112, 108, 108);
+  border: none;
+}
+#body .menu .botones .boton:hover {
+  background-color: rgb(25, 211, 50);
+}
+#body .menu .platillo {
+  background-color: white;
+  width: 18%;
+  height: 100%;
+  text-align: center;
+  border-radius: 5px;
+  padding-bottom: 15px;
+}
+#body .menu .platillo .imagen {
+  height: 200px;
+  width: 100%;
+  background: url("https://www.paulinacocina.net/wp-content/uploads/2020/08/tacos-meat-food-mexican-lunch-dinner-640x480.jpg");
+  background-size: cover;
+}
+
+.pboton {
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  border: 2px solid rgb(25, 211, 50);
+  padding: 5px;
+}
+
+.pboton:hover {
+  background-color: rgb(25, 211, 50);
+  color: white;
+}
+
+.BodyPP {
+  background: url("../img/fondo-inicio.jpg");
+  padding: 0;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  position: absolute;
+}
+
+.contenedorPP {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(200, 207, 100, 0.5)), to(rgba(180, 180, 170, 0.25)));
+  margin: 3rem;
+  width: 1250px;
+  position: relative;
+  padding: 2rem;
+}
+
+p.tPP {
+  display: block;
+  padding: 2rem;
+  color: #000000;
+  text-align: center;
+  font-size: 44px;
+  margin-top: 1rem;
+}
+
+p.pPP {
+  display: block;
+  padding: 2rem;
+  color: #000000;
+  text-align: justify;
+  font-size: 20px;
+  padding-bottom: 10rem;
+  padding-top: 0rem;
+}
+
+img.imNo {
+  float: left;
+}
+
+img.imCr {
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.cPP {
+  background-color: #ffffff;
+  margin-left: 36rem;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+  height: 300px;
+}
+
+.ContenedorInfo {
+  background-color: #ffffff;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  margin-right: 2rem;
+  padding-top: 1rem;
+  height: 49rem;
+  border-radius: 10px;
+}
+
+.iPP {
+  display: block;
+  color: #000000;
+  text-align: center;
+  font-size: 44px;
+  width: auto;
+}
+
+.siPP {
+  display: block;
+  color: #000000;
+  text-align: center;
+  font-size: 35px;
+}
+
+.linea {
+  border-bottom: #504b4b 2px solid;
+  width: 50%;
+  margin: auto;
+}
+
+.mapa {
+  height: 450px;
+  margin: 10px auto;
+  width: 600px;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.admin-body {
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  background: #f3f4f6;
+  display: flex;
+  font-family: Tahoma;
+}
+.admin-body .admin-container {
+  background: url(https://thumbs.dreamstime.com/b/marco-de-la-comida-fondo-italiano-de-la-comida-concepto-sano-de-la-comida-o-ingredientes-para-cocinar-la-salsa-del-pesto-en-un-74349277.jpg) no-repeat;
+  background-size: cover;
+  width: 23%;
+  height: 100vh;
+  box-shadow: 0px 1px 3px rgb(96, 88, 88);
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.admin-body .admin-container .adminform {
+  width: 100% !important;
+  position: relative;
+  color: whitesmoke;
+  text-align: center;
+  margin-top: 50%;
+}
+.admin-body .admin-container .adminform button {
+  width: 10rem;
+  height: 3rem;
+  margin: 1rem;
+  background: #080220;
+  border-radius: 10px;
+  border-color: whitesmoke;
+  color: whitesmoke;
+  font-weight: 650;
+}
+.admin-body .admin-container .adminform button:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+.admin-body .admintable {
+  width: 100%;
+  height: 94%;
+  box-shadow: 0px 1px 3px rgb(96, 88, 88);
+  margin-top: 42px;
+}
+.admin-body .btntableM {
+  width: 80px;
+  height: 32px;
+  margin: 5px;
+  border-radius: 10px;
+  border: none;
+  color: whitesmoke;
+  background-color: #0e0eda;
+}
+.admin-body .btntableM:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+.admin-body .btntableE {
+  width: 80px;
+  height: 32px;
+  margin: 5px;
+  border-radius: 10px;
+  border: none;
+  color: whitesmoke;
+  background-color: #de0000;
+}
+.admin-body .btntableE:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+.admin-body tr:nth-child(odd) {
+  /*esta función hace que tome una celda y ponga un color si y otro no de una tabla el contrario a even es (even)*/
+  background-color: darkgrey;
+}
+.admin-body table th {
+  background-color: #0f67bf; /*Cambia el color de la cabezera de la tabla*/
+  color: whitesmoke; /*cambia color de las letras de la cabezera de la tabla*/
+  padding-left: auto;
+  padding-right: auto;
+  padding-top: 6rem;
+  padding-bottom: 1rem;
+  width: 11.9rem;
+}
+
+#alert-component {
+  color: white;
+  background-color: #e16378;
+  padding: 10px 20px;
+  width: 200px;
+}
+
+.flash-component--info {
+  background-color: var(--bg-info-color);
+  border: var(--b-info-color) 1px solid;
+  color: var(--f-info-color);
+  display: flex;
+  justify-content: space-between;
+  /* margin: 1rem 0; */
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.25rem;
+}
+.flash-component--danger {
+  background-color: var(--bg-danger-color);
+  border: var(--b-danger-color) 1px solid;
+  color: var(--f-danger-color);
+  display: flex;
+  justify-content: space-between;
+  /* margin: 1rem 0; */
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.25rem;
+}
+.flash-component--success {
+  background-color: var(--bg-success-color);
+  border: var(--b-success-color) 1px solid;
+  color: var(--f-success-color);
+  display: flex;
+  justify-content: space-between;
+  /* margin: 1rem 0; */
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.25rem;
+}
+.flash-component--warning {
+  background-color: var(--bg-warning-color);
+  border: var(--b-warning-color) 1px solid;
+  color: var(--f-warning-color);
+  display: flex;
+  justify-content: space-between;
+  /* margin: 1rem 0; */
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.25rem;
+}
+.flash-component--dark {
+  background-color: var(--bg-dark-color);
+  border: var(--b-dark-color) 1px solid;
+  color: var(--f-dark-color);
+  display: flex;
+  justify-content: space-between;
+  /* margin: 1rem 0; */
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.25rem;
+}
+.flash-component__text {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+.flash-component__button {
+  cursor: pointer;
+  width: 20px;
+}
+.flash-component__icon {
+  fill: currentColor;
+  width: 16px;
+  height: 16px;
+}
+
+.nav-component {
+  position: fixed;
+  height: 8rem;
+  width: 100%;
+  margin: 0;
+  background: url("https://m.media-amazon.com/images/I/51mk2Y47DbL._AC_.jpg");
+  font-family: cambria;
+  z-index: 1;
+}
+.nav-component .img {
+  position: absolute;
+  width: 200px;
+  height: 90px;
+  background: url("https://www.logogenio.es/icons/preview/5358");
+  top: 20px;
+  left: 20px;
+  background-size: cover;
+}
+.nav-component .icim {
+  position: relative;
+  top: 1px;
+}
+.nav-component img {
+  position: absolute;
+  width: 8rem;
+  display: inline-block;
+  width: 30px;
+}
+.nav-component svg {
+  position: relative;
+}
+.nav-component ul {
+  list-style: none;
+  position: relative;
+  top: 50px;
+}
+.nav-component ul li {
+  display: inline-block;
+  position: relative;
+  left: 20%;
+}
+.nav-component ul a.an {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 4px;
+  margin-left: 0.5rem;
+}
+.nav-component ul a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+}
+.nav-component a.an:hover {
+  background-color: rgb(25, 211, 50);
+  color: white;
+  border-radius: 10px;
+}
+.nav-component a:hover {
+  background-color: rgb(25, 211, 50);
+  color: white;
+  border-radius: 10px;
+}
+
+#item-r {
+  position: absolute;
+  left: 88%;
+  top: 20px;
+}
+
+.icons {
+  position: relative;
+  display: inline-block;
+  top: 10px;
+  left: 16rem;
+}
+
+.footer-component {
+  position: relative;
+  height: 8rem;
+  width: 100%;
+  background-color: gray;
+}
+
+.cntainer {
+  display: flex;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+.card1 {
+  width: 100%;
+  height: 170px;
+  margin: 20px;
+  border-radius: 6px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 400ms ease;
+  max-width: 300px;
+}
+.card1:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
+
+.card1:hover .overlay {
+  opacity: 1;
+}
+.card1:hover .overlay .head {
+  transform: translateY(0px);
+}
+.card1:hover .overlay hr {
+  width: 75px;
+  transition-delay: 0.4s;
+}
+.card1:hover .overlay .price {
+  transform: translateY(0px);
+  transition-delay: 0.3s;
+  opacity: 1;
+}
+.card1:hover .overlay .cart {
+  transform: translateY(0px);
+  transition-delay: 0.6s;
+  opacity: 1;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr 2fr 1fr;
+  background: rgba(77, 77, 77, 0.9);
+  color: black;
+  opacity: 0;
+  transition: all 0.5s;
+  font-family: "Playfair Display", serif;
+}
+
+.items {
+  padding-left: 20px;
+  letter-spacing: 3px;
+  background: rgba(77, 77, 77, 0.9);
+}
+
+.items2 {
+  padding-left: 20px;
+  letter-spacing: 3px;
+  background: rgba(77, 77, 77, 0.9);
+}
+
+.head {
+  font-size: 28px;
+  line-height: 40px;
+  background: rgba(77, 77, 77, 0.9);
+  transform: translateY(40px);
+  transition: all 0.7s;
+}
+.head hr {
+  display: block;
+  width: 0;
+  background: rgba(77, 77, 77, 0.9);
+  border: none;
+  border-bottom: solid 2px #FEF5DF;
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  transition: all 0.5s;
+}
+
+.price {
+  font-size: 22px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  line-height: 10px;
+  font-weight: bold;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.7s;
+  background: rgba(77, 77, 77, 0.9);
+}
+.price .old {
+  text-decoration: line-through;
+  background: rgba(77, 77, 77, 0.9);
+  color: #b3b3b3;
+}
+
+.cart {
+  font-size: 12px;
+  opacity: 0;
+  background: rgba(77, 77, 77, 0.9);
+  letter-spacing: 1px;
+  font-family: "Lato", sans-serif;
+  transform: translateY(40px);
+  transition: all 0.7s;
+}
+.cart i {
+  font-size: 16px;
+  background: rgba(77, 77, 77, 0.9);
+}
+.cart span {
+  margin-left: 10px;
+  color: black;
+  text-decoration: none;
+  background: rgba(77, 77, 77, 0.9);
+}
+
+.imgp {
+  position: absolute;
+  max-height: 169px;
+  border-radius: 6px;
+  width: 300px;
+}
+
+.imgp2 {
+  position: absolute;
+  z-index: -1;
+  max-height: 169px;
+  border-radius: 6px;
+  width: 300px;
+}
+
+.encerrarcards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1150px;
+}
+
+.slide {
+  position: relative;
+  margin: 26px auto;
+  margin-bottom: 0;
+  width: 50%;
+}
+
+.slide-inner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: calc(300px + 3em);
+}
+
+.slide-open:checked + .slide-item {
+  position: static;
+  opacity: 100;
+}
+
+.slide-item {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.6s ease-out;
+}
+
+.slide-item img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.slide-control {
+  background: rgba(0, 0, 0, 0.28);
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  font-size: 40px;
+  height: 40px;
+  line-height: 35px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  cursor: pointer;
+  transform: translate(0, -50%);
+  text-align: center;
+  width: 40px;
+  z-index: 10;
+}
+
+.slide-control.prev {
+  left: 2%;
+}
+
+.slide-control.next {
+  right: 2%;
+}
+
+.slide-control:hover {
+  background: rgba(0, 0, 0, 0.8);
+  color: #aaaaaa;
+}
+
+#slide-1:checked ~ .control-1,
+#slide-2:checked ~ .control-2,
+#slide-3:checked ~ .control-3 {
+  display: block;
+}
+
+.slide-indicador {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 2%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+}
+
+.slide-indicador li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.slide-circulo {
+  color: #828282;
+  cursor: pointer;
+  display: block;
+  font-size: 35px;
+}
+
+.slide-circulo:hover {
+  color: #aaaaaa;
+}
+
+#slide-1:checked ~ .control-1 ~ .slide-indicador li:nth-child(1) .slide-circulo,
+#slide-2:checked ~ .control-2 ~ .slide-indicador li:nth-child(2) .slide-circulo,
+#slide-3:checked ~ .control-3 ~ .slide-indicador li:nth-child(3) .slide-circulo {
+  color: #428bca;
+}
+
+#titulo {
+  width: 100%;
+  position: absolute;
+  padding: 0px;
+  margin: 0px auto;
+  text-align: center;
+  font-size: 27px;
+  color: rgb(255, 255, 255);
+  font-family: "Open Sans", sans-serif;
+  z-index: 9999;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
+}
+
+.caards {
+  background-color: rgb(255, 255, 255);
+  width: 50%;
+  height: calc(300px + 3em);
+  margin: 1rem auto;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+}
+
+.happy-card, .happy-card2, .lovers-card, .lovers-card2 {
+  position: relative; /* for iOS */
+  width: 250px;
+  padding: 20px;
+  color: #586875;
+  background-color: #f4f7f7;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out; /* important to use a symmetrical timing function (linear also works) */
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.happy-card {
+  grid-area: happy;
+  margin-right: -10px; /* nudge closer to lover's card */
+  /* these values are used to animate via translateX */
+  --swing: -25px;
+  --overlap: 25px;
+}
+
+.happy-card2 {
+  grid-area: happy;
+  margin-right: -10px; /* nudge closer to lover's card */
+  /* these values are used to animate via translateX */
+  --swing: -25px;
+  --overlap: 25px;
+}
+
+.lovers-card {
+  grid-area: lovers;
+  margin-left: -10px; /* nudge closer to happy card */
+  /* these values are used to animate via translateX */
+  --swing: 25px;
+  --overlap: -25px;
+}
+
+.lovers-card2 {
+  grid-area: lovers;
+  margin-left: -10px; /* nudge closer to happy card */
+  /* these values are used to animate via translateX */
+  --swing: 25px;
+  --overlap: -25px;
+}
+
+/* when a radio button is set, swing the corresponding card fowards */
+#happy-radio:checked ~ .selector .happy-card,
+#happy-radio2:checked ~ .selector .happy-card2,
+#lovers-radio:checked ~ .selector .lovers-card,
+#lovers-radio2:checked ~ .selector .lovers-card2 {
+  -webkit-animation-name: swing-forwards;
+          animation-name: swing-forwards;
+}
+
+@-webkit-keyframes swing-forwards {
+  0% {
+    z-index: 1; /* start behind other card */
+    transform: scale(0.9);
+  }
+  50% {
+    transform: translateX(var(--swing));
+  }
+  100% {
+    z-index: 2; /* end in front of other card */
+    transform: translateX(var(--overlap)) scale(1.1);
+  }
+}
+
+@keyframes swing-forwards {
+  0% {
+    z-index: 1; /* start behind other card */
+    transform: scale(0.9);
+  }
+  50% {
+    transform: translateX(var(--swing));
+  }
+  100% {
+    z-index: 2; /* end in front of other card */
+    transform: translateX(var(--overlap)) scale(1.1);
+  }
+}
+/* when a radio button is set, swing the opposite card backwards */
+#happy-radio:checked ~ .selector .lovers-card,
+#happy-radio2:checked ~ .selector .lovers-card,
+#lovers-radio:checked ~ .selector .happy-card,
+#lovers-radio2:checked ~ .selector .happy-card {
+  -webkit-animation-name: swing-backwards;
+          animation-name: swing-backwards;
+}
+
+@-webkit-keyframes swing-backwards {
+  0% {
+    z-index: 2; /* start in front of other card */
+    transform: translateX(var(--overlap)) scale(1.1);
+  }
+  50% {
+    transform: translateX(var(--swing));
+  }
+  100% {
+    z-index: 1; /* end behind other card */
+    transform: scale(0.9);
+  }
+}
+
+@keyframes swing-backwards {
+  0% {
+    z-index: 2; /* start in front of other card */
+    transform: translateX(var(--overlap)) scale(1.1);
+  }
+  50% {
+    transform: translateX(var(--swing));
+  }
+  100% {
+    z-index: 1; /* end behind other card */
+    transform: scale(0.9);
+  }
+}
+.Nombre {
+  padding: 2rem;
+  border-bottom: 1px dashed #bdd6d2;
+  font-size: 1.5rem;
+}
+
+.UN {
+  margin: 15px 0;
+  padding-left: 30px;
+  line-height: 1.5rem;
+  list-style-type: square;
+}
+
+.res {
+  margin: 0 -20px -20px;
+  padding: 15px;
+  background-color: #bdd6d2;
+  font-weight: bold;
+  text-align: center;
+}
+
+.happy-pick, .happy-pick2, .lovers-pick, .lovers-pick2 {
+  grid-area: pick;
+  margin: 50px auto 0;
+  padding: 15px;
+  border: 1px solid #f4f7f7;
+  border-radius: 9999px;
+  background-color: #b46d73;
+  font-size: 1.25rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+}
+
+.happy-pick::before, .lovers-pick::after {
+  display: inline-block;
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+}
+
+.happy-pick::before {
+  margin-right: 10px;
+  content: "\f0a8"; /* fa-arrow-circle-left */
+}
+
+.happy-pick2::before, .lovers-pick2::after {
+  display: inline-block;
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+}
+
+.happy-pick2::before {
+  margin-right: 10px;
+  content: "\f0a8"; /* fa-arrow-circle-left */
+}
+
+.lovers-pick::after {
+  margin-left: 10px;
+  content: "\f0a9"; /* fa-arrow-circle-right */
+}
+
+.lovers-pick2::after {
+  margin-left: 10px;
+  content: "\f0a9"; /* fa-arrow-circle-right */
+}
+
+/* hide happy toggle button if happy is currently selected */
+#happy-radio:checked ~ .selector .happy-pick {
+  display: none;
+}
+
+#happy-radio2:checked ~ .selector .happy-pick2 {
+  display: none;
+}
+
+/* hide lover's toggle button if lover's is currently selected */
+#lovers-radio:checked ~ .selector .lovers-pick {
+  display: none;
+}
+
+#lovers-radio2:checked ~ .selector .lovers-pick2 {
+  display: none;
+}
+
+/* increase overlap and swing distance on smaller screens */
+@media (max-width: 560px) {
+  .happy-card {
+    margin-right: -85px;
+    --swing: -100px;
+  }
+  .happy-card2 {
+    margin-right: -85px;
+    --swing: -100px;
+  }
+  .lovers-card {
+    margin-left: -85px;
+    --swing: 100px;
+  }
+  .lovers-card2 {
+    margin-left: -85px;
+    --swing: 100px;
+  }
+}/*# sourceMappingURL=main.css.map */

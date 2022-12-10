@@ -1,0 +1,109 @@
+.table-section{
+    width: 100%;
+    .table{
+        width: 100%;
+        border-spacing: 0px;
+        thead{
+            th{
+                border-bottom: 2px solid $colorBlack;
+                height: 40px;
+                padding: 0px 10px
+            }
+        }
+        tbody{
+            td{
+                border-bottom: 1px solid rgba($colorBlack, 0.4);
+                border-left: 2px solid rgba($colorBlack, 0.4);
+                padding: 10px 10px
+            }
+            td:first-child{
+                font-weight: 700;
+                text-align: center
+            }
+        }
+        @media(max-width:990px){
+            width: 990px
+        }
+    }
+    @media(max-width:990px){
+        max-width: 100%;
+        overflow-x: auto
+    }
+}
+.table-striped-success>tbody>tr:nth-child(odd)>td,
+.table-striped-success>tbody>tr:nth-child(odd)>th {
+    background-color: rgba($colorSuccess, 0.3);
+}
+.table-striped-success>tbody>tr:nth-child(even)>td,
+.table-striped-success>tbody>tr:nth-child(even)>th {
+    background-color: rgba($colorSuccess,0.6);
+}
+.table-striped-success>thead>tr>th {
+    background-color: $colorSuccess;
+}
+.table-striped-info>tbody>tr:nth-child(odd)>td,
+.table-striped-info>tbody>tr:nth-child(odd)>th {
+    background-color: rgba($colorInfo, 0.3);
+}
+.table-striped-info>tbody>tr:nth-child(even)>td,
+.table-striped-info>tbody>tr:nth-child(even)>th {
+    background-color: rgba($colorInfo,0.6);
+}
+.table-striped-info>thead>tr>th {
+    background-color: $colorInfo;
+}
+.table-striped-primary>tbody>tr:nth-child(odd)>td,
+.table-striped-primary>tbody>tr:nth-child(odd)>th {
+    background-color: rgba($colorPrimary, 0.3);
+}
+.table-striped-primary>tbody>tr:nth-child(even)>td,
+.table-striped-primary>tbody>tr:nth-child(even)>th {
+    background-color: rgba($colorPrimary,0.6);
+}
+.table-striped-primary>thead>tr>th {
+    background-color: $colorPrimary;
+}
+.table-striped-warning>tbody>tr:nth-child(odd)>td,
+.table-striped-warning>tbody>tr:nth-child(odd)>th {
+    background-color: rgba($colorWarning, 0.3);
+}
+.table-striped-warning>tbody>tr:nth-child(even)>td,
+.table-striped-warning>tbody>tr:nth-child(even)>th {
+    background-color: rgba($colorWarning,0.6);
+}
+.table-striped-warning>thead>tr>th {
+    background-color: $colorWarning;
+}
+.table-striped-danger>tbody>tr:nth-child(odd)>td,
+.table-striped-danger>tbody>tr:nth-child(odd)>th {
+    background-color: rgba($colorDanger, 0.3);
+}
+.table-striped-danger>tbody>tr:nth-child(even)>td,
+.table-striped-danger>tbody>tr:nth-child(even)>th {
+    background-color: rgba($colorDanger,0.6);
+}
+.table-striped-danger>thead>tr>th {
+    background-color: $colorDanger;
+}
+.table-striped-dark>tbody>tr:nth-child(odd)>td,
+.table-striped-dark>tbody>tr:nth-child(odd)>th {
+    background-color: rgba($colorDark, 0.3);
+}
+.table-striped-dark>tbody>tr:nth-child(even)>td,
+.table-striped-dark>tbody>tr:nth-child(even)>th {
+    background-color: rgba($colorDark,0.6);
+}
+.table-striped-dark>thead>tr>th {
+    background-color: $colorDark;
+}
+.table-striped-secondary>tbody>tr:nth-child(odd)>td,
+.table-striped-secondary>tbody>tr:nth-child(odd)>th {
+    background-color: rgba($colorSecondary, 0.3);
+}
+.table-striped-secondary>tbody>tr:nth-child(even)>td,
+.table-striped-secondary>tbody>tr:nth-child(even)>th {
+    background-color: rgba($colorSecondary,0.6);
+}
+.table-striped-secondary>thead>tr>th {
+    background-color: $colorSecondary;
+}

@@ -1,0 +1,105 @@
+
+
+@for $i from 1 through 5{
+    .pt-#{$i}{
+        padding-top: calc(#{$i} * 5px)
+    }
+    .pr-#{$i}{
+        padding-right: calc(#{$i} * 5px)
+    }
+    .pb-#{$i}{
+        padding-bottom: calc(#{$i} * 5px)
+    }
+    .pl-#{$i}{
+        padding-left: calc(#{$i} * 5px)
+    }
+    .mt-#{$i}{
+        margin-top: calc(#{$i} * 5px)
+    }
+    .mr-#{$i}{
+        margin-right: calc(#{$i} * 5px)
+    }
+    .mb-#{$i}{
+        margin-bottom: calc(#{$i} * 5px)
+    }
+    .ml-#{$i}{
+        margin-left: calc(#{$i} * 5px)
+    }
+}
+
+@for $i from 1 through 12{
+    .col-#{$i}{
+        width: calc(100% / 12 * #{$i} - 20px);
+        padding: 0px 10px
+    }
+    .offset-#{$i}{
+        margin-left: calc(100% / 12 * #{$i}) !important;
+    }
+}
+
+@media(max-width: 575px){
+    @for $i from 1 through 12{
+        .col-xs-#{$i}{
+            width: calc(100% / 12 * #{$i} - 20px);
+            padding: 0px 10px
+        }
+        .offset-xs-#{$i}{
+            margin-left: calc(100% / 12 * #{$i}) !important;
+        }
+    }
+}
+@media(min-width: 576px){
+    @for $i from 1 through 12{
+        .col-sm-#{$i}{
+            width: calc(100% / 12 * #{$i} - 20px);
+            padding: 0px 10px
+        }
+        .offset-sm-#{$i}{
+            margin-left: calc(100% / 12 * #{$i}) !important;
+        }
+    }
+}
+@media(min-width: 768px){
+    @for $i from 1 through 12{
+        .col-md-#{$i}{
+            width: calc(100% / 12 * #{$i} - 20px);
+            padding: 0px 10px
+        }
+        .offset-md-#{$i}{
+            margin-left: calc(100% / 12 * #{$i}) !important;
+        }
+    }
+}
+@media(min-width: 992px){
+    @for $i from 1 through 12{
+        .col-lg-#{$i}{
+            width: calc(100% / 12 * #{$i} - 20px);
+            padding: 0px 10px
+        }
+        .offset-lg-#{$i}{
+            margin-left: calc(100% / 12 * #{$i}) !important;
+        }
+    }
+}
+@media(min-width: 1200px){
+    @for $i from 1 through 12{
+        .col-xl-#{$i}{
+            width: calc(100% / 12 * #{$i} - 20px);
+            padding: 0px 10px
+        }
+        .offset-xl-#{$i}{
+            margin-left: calc(100% / 12 * #{$i}) !important;
+        }
+    }
+}
+@media(min-width: 1400px){
+    @for $i from 1 through 12{
+        .col-xxl-#{$i}{
+            width: calc(100% / 12 * #{$i} - 20px);
+            padding: 0px 10px
+        }
+        .offset-xxl-#{$i}{
+            margin-left: calc(100% / 12 * #{$i}) !important;
+        }
+    }
+}
